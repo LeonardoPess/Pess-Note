@@ -89,7 +89,7 @@
                                             if($sucesso){
                                                 $sql = MySql::conectar()->prepare("INSERT INTO `tb_site.listas` VALUE (null,?,?)");
                                                 $sql->execute(array($nome,$slug));
-                                                Site::redirect(INCLUDE_PATH.$slug);
+                                                Site::redirect(INCLUDE_PATH);
                                             }
                                         }
                                     ?>
