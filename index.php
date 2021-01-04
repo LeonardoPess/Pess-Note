@@ -19,7 +19,7 @@
 <head>
 
     <!--// title //-->
-    <title>ANOTAÇÕES</title>
+    <title>Pess Note</title>
 
     <!--// meta tags //-->
     <meta charset="utf-8">
