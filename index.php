@@ -65,7 +65,7 @@
                             <ul <?php selecionadoMenu($slug); ?>>
                                 <li>
                                 <a class="listas" href="<?php INCLUDE_PATH; echo $slug.'?id='.$value['id'] ?>">
-                                    <i class="fas fa-align-left"></i> <?php echo $value['nome'] ?>
+                                    <i class="fas fa-align-left"></i> <?php echo htmlspecialchars($value['nome']) ?>
                                 </a>
                                 <a actionBtn="delete" class="list_delete" href="<?php echo INCLUDE_PATH.$slug ?>?deletarlista=<?php echo $value['id'] ?>"><i class="fas fa-trash-alt"></i></a>
                                 </li>
@@ -129,7 +129,7 @@
                             <ul <?php selecionadoMenu($slug); ?>>
                                 <li>
                                 <a class="listas" href="<?php INCLUDE_PATH; echo $slug.'?id='.$value['id'] ?>">
-                                    <i class="fas fa-align-left"></i> <?php echo $value['nome'] ?>
+                                    <i class="fas fa-align-left"></i> <?php echo htmlspecialchars($value['nome']) ?>
                                 </a>
                                 <a actionBtn="delete" class="list_delete" href="<?php echo INCLUDE_PATH.$slug ?>?deletarlista=<?php echo $value['id'] ?>"><i class="fas fa-trash-alt"></i></a>
                                 </li>
@@ -196,7 +196,7 @@
         ?>
 
             <div class="title__section">
-                <?php echo $lista['nome'] ?>
+                <?php echo htmlspecialchars($lista['nome']) ?>
             </div><!--title_section-->
 
             <div class="body__section shadow__black">
@@ -231,7 +231,7 @@
                     <div class="notes">
                         <a actionBtn="delete" class="delete" href="<?php echo INCLUDE_PATH.$slug ?>?id=<?php echo $value['lista_id'] ?>&deletarnote=<?php echo $value['id'] ?>"><i class="fas fa-times"></i></a>
 
-                        <p>" <?php echo $value['note'] ?> "</p>
+                        <p>" <?php echo htmlspecialchars($value['note']) ?> "</p>
                     </div><!--notes-->
                 <?php } ?>
 
